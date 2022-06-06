@@ -5,18 +5,23 @@
  * 
  * Return: Always 0
  */
-
 int main(void)
-
 {
-	char alphabet;
-
-	for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
+	<<<<<<< HEAD
+	num = 97;
+	while (num <= 122)
+	putchar(num);
+	num++;
+	=======
+	int p;
+	p = 97
+	while (p <= 122)
 	{
-		putchar(alphabet);
+	putchar(p);
+	p++;
 	}
-
-	putchar('\n')
-
-		return (0);
+	>>>>>>> c38d008b18676f16774155151031a0fcc1c46752
+	putchar('\n');
+	return (0);
 }
+
