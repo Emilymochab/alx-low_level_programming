@@ -3,30 +3,21 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- *
+ * main	- assigns random number to int n everytime
+ * it executes, and prints it
  * Return: Always 0 (Success/correct)
  */
-
 int main(void)
 {
 	int n;
 
 	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-
-	if (n == 0)
-	{
+	n = rand() - RAND_MAX /	2;
+	if (n > 0)
 		printf("%i is zero\n", n);
-	}
-
-	else if (n < 0)
-	{
+	else if (n == 0)
 		printf("%i is negative\n", n);
-	}
-	else
-	{
+	else if (n < 0)
 		printf("%i is positive\n", n);
-	}
-	retrun (0);
+	return(0);
 }
