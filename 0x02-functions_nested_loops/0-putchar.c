@@ -1,17 +1,23 @@
 #include "main.h"
+
+
 /**
- * main - all programs run from witin this function
+ * main - Entry point
  *
- * Return: returb 0 if the program is good _putchar
+ * Return: nothing, return void
  */
+
 int main(void)
 {
-	int i;
-	char name [8] = "_putchar";
-	for (i = 0; i < 8; i++)
-	{
-	_putchar (name[i]);
-	}
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
 	_putchar('\n');
+
 	return (0);
 }
